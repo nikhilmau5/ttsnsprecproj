@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="el">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Κείμενο Σε Ομιλία &amp; Αναγνώριση Ομιλίας, Αρχική">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Αρχική</title>
+    <!--website homepage stylesheet-->
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="CSS/Αρχική.css" type="text/css" media="screen">
+    <!--chatbot stylesheet-->
+    <link rel="stylesheet" href="CSS/dialogflow_chatbot.css" type="text/css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script class="u-script" type="text/javascript" src="JS/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="JS/nicepage.js" defer=""></script>
+    <!--file saver and pdf-extract script-->
+    <script class="u-script" type="text/javascript" src="JS/pdf_extract.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="JS/FileSaver.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.29.1, nicepage.com">
+
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+    <script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "",
+      "logo": "Images/logo_speech.png"
+      }
+    </script>
+    <!--adding javascript for bleeping effect sound when button pressed-->
+    <script>
+      var button_bleep = new Audio();
+      button_bleep.src = "Audio/Tiny Button Push.mp3";
+    </script>
+    <!--clear the textarea script-->
+    <script>
+    function cleartextarea() {
+      document.getElementById("audio_text").value = "";
+    }
+    </script>
+    <!--adding script for saving txt file using FileSaver.js-->
+    <script>
+    function saveFile() {
+        var data = document.getElementById("audio_text").value;
+        if (data != ''){
+          var blob = new Blob([data],
+            { type: "text/plain;charset=utf-8" });
+        saveAs(blob, "file_download.txt");
+      }else{
+        return document.getElementById("error_message").innerHTML = "Σφάλμα. Δεν μπορεί να γίνει λήψη του αρχείου επειδή το αρχείο είναι κενό. Δοκιμάστε να γράψετε αρχείο στην περιοχή text.";
+      }
+    }
+  </script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Αρχική">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="index.html" data-home-page-title="Home" class="u-body">
+    <header class="u-align-left u-clearfix u-grey-80 u-header u-sticky u-header" id="sec-3ad6">
+      <style class="u-sticky-style" data-style-id="fc19">.u-sticky-fixed.u-sticky-fc19:before, .u-body.u-sticky-fixed .u-sticky-fc19:before {
+        borders: top right bottom left !important
+        }
+      </style>
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <!--responsive menu-->
+        <nav class="u-align-right u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-active-color u-custom-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-custom-color-3 u-text-hover-palette-2-base" href="#" style="padding: 4px 0px; margin-right: -6px; font-size: calc(1em + 8px);">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                  </symbol>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1">
+              <li class="u-nav-item"><a class="u-active-grey-50 u-button-style u-grey-75 u-hover-grey-80 u-nav-link u-text-active-black u-text-hover-custom-color-3" href="Αρχική.html" onclick="button_bleep.play()" style="padding: 10px 18px;">Αρχική</a>
+              </li>
+              <li class="u-nav-item"><a class="u-active-grey-50 u-button-style u-grey-75 u-hover-grey-80 u-nav-link u-text-active-black u-text-hover-custom-color-3" href="Σχετικά.html" onclick="button_bleep.play()" style="padding: 10px 18px;">Σχετικά με εμάς</a>
+              </li>
+              <li class="u-nav-item"><a class="u-active-grey-50 u-button-style u-grey-75 u-hover-grey-80 u-nav-link u-text-active-black u-text-hover-custom-color-3" href="Βρείτε.html" onclick="button_bleep.play()" style="padding: 10px 29px 10px 18px;">Βρείτε μας</a>
+              </li>
+              <!--add webpage translation english-greek-->
+              <div class="Language">
+                <ul class="lang-select">
+                  <li class="u-nav-item"><a class="u-active-grey-50 u-button-style u-grey-75 u-hover-grey-80 u-nav-link u-text-active-black u-text-hover-custom-color-3" href="Αρχική.html" onclick="button_bleep.play()" style ="padding: 5px 5px;">Ελληνικά</a></li>
+                  <li class="u-nav-item"><a class="u-active-grey-50 u-button-style u-grey-75 u-hover-grey-80 u-nav-link u-text-active-black u-text-hover-custom-color-3" href="index.html" onclick="button_bleep.play()" style ="padding: 5px 5px;">English</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Αρχική.html" onclick="button_bleep.play()" style="padding: 10px 18px;">Αρχική</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Σχετικά.html" onclick="button_bleep.play()" style="padding: 10px 18px;">Σχετικά με εμάς</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Βρείτε.html" onclick="button_bleep.play()" style="padding: 10px 18px;">Βρείτε μας</a>
+                  </li>
+                  <!--add webpage translation english-greek-->
+                  <div class="Language">
+                    <ul class="lang-select">
+                      <li class="u-nav-item"><a class="u-button-style u-nav-link u-hover-grey-80" href="Αρχική.html" onclick="button_bleep.play()" style ="padding: 5px 5px;">Ελληνικά</a></li>
+                      <li class="u-nav-item"><a class="u-button-style u-nav-link u-hover-grey-80" href="index.html" onclick="button_bleep.play()" style ="padding: 5px 5px;">English</a></li>
+                     </ul>
+                   </div>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <a href="Αρχική.html" onclick="button_bleep.play()" class="u-align-center-sm u-align-center-xs u-image u-logo u-image-1" data-image-width="237" data-image-height="236">
+          <img src="Images/logo_speech.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <span style="font-weight: 700;">
+          <h3 class="u-align-center u-text u-text-custom-color-3 u-text-1">Web Application</h3>
+          <h2 class="u-align-center u-text u-text-custom-color-3 u-text-default-lg u-text-default-xl u-text-2">Κείμενο Σε Ομιλία &amp; Αναγνώριση Ομιλίας</h2>
+        </span>
+      </div>
+      <!--dialogflow chatbot-->
+        <df-messenger
+        intent="WELCOME"
+        chat-title="Dorian The Bot"
+        agent-id="948a47fb-b7f0-4082-8719-8fd259b00c9b"
+        chat-icon="Images/robot.ico"
+        expand=true
+        language-code="en"
+        ></df-messenger>
+        <!--end of chatbot section-->
+    </header>
+    <section class="u-border-5 u-border-grey-75 u-clearfix u-section-1" id="sec-42a6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <!--end of chatbot section-->
+        <h3 class="u-align-center u-text u-text-black u-text-1">Ανεβάστε ένα αρχείο pdf ή γράψτε κάτι στην περιοχή text και ακούστε το.</h3>
+        <br>
+        <br>
+        <div id="pdf_upload">
+          <input id="pdf_inp" class="u-align-center u-border-2 u-border-active-grey-80 u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-active-black u-btn-1" type="file" accept="application/pdf"/>
+          <button id="pdf" class="u-align-center u-border-2 u-border-active-grey-80 u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-active-black u-btn-1" type="submit" onclick="button_bleep.play()">ΜΕΤΑΦΟΡΤΩΣΗ ΑΡΧΕΙΟΥ PDF</button>
+          <br>
+            <!--adding a textarea to display text from pdf file-->
+            <textarea id="input_text_pdf" type="text" style="resize: none;" placeholder="Πληκτρολογείστε ένα μήνυμα ή ανεβάστε ένα pdf αρχείο και πατήστε το κουμπί audio για να το ακούσετε, το κουμπί pause για να κάνετε pause και το κουμπί stop για να σταματήστε το text-to-speech..."></textarea>
+          </form>
+          <!--add pitch and rate -->
+          <div class= pitch-rate-select>
+            <h5 style="font-size: 20px;">Τονικό Ύψος</h5>
+            <div id="pitch" style="font-size: 20px; text-align: center;">1</div>
+            <input id="pitch_value" type="range" class="slider" min="0" max="2" value="1" step="0.1">
+
+            <h5 style="font-size: 20px;">Ταχύτητα</h5>
+            <span id="rate" style="font-size: 20px; text-align: center;">1</span>
+            <input id="rate_value"type="range" class="slider" min="0" max="2" value="1" step="0.1">
+          </div>
+          <!-- adding a voices group-->
+          <div class= voice-group>
+            <!--setting style for dropdown_select-->
+            <select id="voice_list" class="dropdown_select" onfocus="this.size=8;" onblur="this.size=1;" onchange="this.size=1; this.blur();"></select>
+          </div>
+          <button id="start" class="u-border-2 u-border-active-grey-80 u-border-hover-grey-15 u-border-white u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-active-grey-90 u-text-black u-text-hover-white u-btn-2">
+            <span class="u-icon u-text-custom-color-6 u-icon-1">
+              <svg class="u-svg-content" viewBox="0 0 93.038 93.038" x="0px" y="0px" style="width: 1em; height: 1em;">
+                <g>
+                  <path d="M46.547,75.521c0,1.639-0.947,3.128-2.429,3.823c-0.573,0.271-1.187,0.402-1.797,0.402c-0.966,0-1.923-0.332-2.696-0.973   l-23.098-19.14H4.225C1.892,59.635,0,57.742,0,55.409V38.576c0-2.334,1.892-4.226,4.225-4.226h12.303l23.098-19.14   c1.262-1.046,3.012-1.269,4.493-0.569c1.481,0.695,2.429,2.185,2.429,3.823L46.547,75.521L46.547,75.521z M62.784,68.919   c-0.103,0.007-0.202,0.011-0.304,0.011c-1.116,0-2.192-0.441-2.987-1.237l-0.565-0.567c-1.482-1.479-1.656-3.822-0.408-5.504   c3.164-4.266,4.834-9.323,4.834-14.628c0-5.706-1.896-11.058-5.484-15.478c-1.366-1.68-1.24-4.12,0.291-5.65l0.564-0.565   c0.844-0.844,1.975-1.304,3.199-1.231c1.192,0.06,2.305,0.621,3.061,1.545c4.977,6.09,7.606,13.484,7.606,21.38   c0,7.354-2.325,14.354-6.725,20.24C65.131,68.216,64.007,68.832,62.784,68.919z M80.252,81.976   c-0.764,0.903-1.869,1.445-3.052,1.495c-0.058,0.002-0.117,0.004-0.177,0.004c-1.119,0-2.193-0.442-2.988-1.237l-0.555-0.555   c-1.551-1.55-1.656-4.029-0.246-5.707c6.814-8.104,10.568-18.396,10.568-28.982c0-11.011-4.019-21.611-11.314-29.847   c-1.479-1.672-1.404-4.203,0.17-5.783l0.554-0.555c0.822-0.826,1.89-1.281,3.115-1.242c1.163,0.033,2.263,0.547,3.036,1.417   c8.818,9.928,13.675,22.718,13.675,36.01C93.04,59.783,88.499,72.207,80.252,81.976z">
+                  </path>
+                </g>
+              </svg><img>
+            </span>&nbsp;
+          </button>
+          <button id="pause" class="u-border-2 u-border-active-grey-80 u-border-hover-grey-15 u-border-white u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-active-grey-90 u-text-black u-text-hover-white u-btn-4">
+            <span class="u-file-icon u-icon u-text-body-color u-icon-3">
+              <img src="Images/pause.png" alt="">
+            </span>&nbsp;
+          </button>
+          <button id="cancel" class="u-border-2 u-border-active-grey-80 u-border-hover-grey-15 u-border-white u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-active-grey-90 u-text-black u-text-hover-white u-btn-5">
+            <span class="u-file-icon u-icon u-text-body-color u-icon-4">
+              <img src="Images/stop.png" alt=""></span>&nbsp;
+          </button>
+      </div>
+      <p style="text-align:center; color:white;">Προτείνετε η χρήση του Google Chrome.<br>Η ιστοσελίδα και οι εφαρμογές αυτής δεν δουλεύουν σε όλους τους Browsers.<p>
+    </section>
+    <section class="u-border-5 u-border-grey-75 u-clearfix u-section-2" id="sec-4284">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-center u-text u-text-black u-text-1">Πατηστε το MC κουμπί για να γράψετε το αρχείο σας χρησιμοποιώντας την φωνή σας.<br>Πατήστε το κουμί Check όταν θέλετε να κλείσετε το μικρόφωνο.<br>Πατήστε το κουμπί Cancel για να καθαρίσετε την περιοχή text.</h3>
+        <button id="start_btn" class="u-align-center u-border-2 u-border-active-grey-75 u-border-hover-grey-15 u-border-white u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-hover-grey-15 u-btn-1" onclick="button_bleep.play()">
+          <span class="u-icon u-text-custom-color-6 u-icon-1">
+            <svg class="u-svg-content" viewBox="-80 0 448 448" style="width: 1em; height: 1em;">
+              <path d="m64 208c0 44.183594 35.816406 80 80 80s80-35.816406 80-80v-128c0-44.183594-35.816406-80-80-80s-80 35.816406-80 80zm0 0">
+              </path>
+              <path d="m256 176v32c0 61.855469-50.144531 112-112 112s-112-50.144531-112-112v-32h-32v32c.0976562 73.289062 55.171875 134.839844 128 143.054688v96.945312h32v-96.945312c72.828125-8.214844 127.902344-69.765626 128-143.054688v-32zm0 0">
+              </path>
+            </svg>
+            <img>
+          </span>&nbsp;
+        </button>
+        <!--adding status on start display status1, on error display status2 -->
+        <p id="display_status_1" style="display:none;">Μιλήστε ...</p>
+        <p id="display_status_2" style="display:none;">Κάτι πήγε λάθος.Δοκιμάστε ξανά...</p>
+        <button id="stop_btn" class="u-align-center u-border-2 u-border-active-grey-75 u-border-hover-grey-15 u-border-white u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-hover-grey-15 u-btn-2" onclick="button_bleep.play()">
+          <span class="u-file-icon u-icon u-text-custom-color-6 u-icon-2">
+            <img src="Images/check.png" alt="">
+          </span>&nbsp;
+        </button>
+        <button class="u-align-center u-border-2 u-border-active-grey-75 u-border-hover-grey-15 u-border-white u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-hover-grey-15 u-btn-3" onclick="button_bleep.play();cleartextarea()">
+          <span class="u-file-icon u-icon u-text-custom-color-6 u-icon-3">
+            <img src="Images/cancel.png" alt="">
+          </span>&nbsp;
+        </button>
+        <br>
+        <br>
+        <br>
+        <div class ="text_container_for_audio">
+          <!--adding a textarea to display text in pdf file-->
+          <textarea id="audio_text" style="resize: none;" placeholder="Εδώ εμφανίζεται το μήνυμα που γράφετε με την φωνή σας...Πατήστε Λήψη Αρχείου Κειμένου αν θέλετε να κατεβάσετε το αρχείο που γράψατε με την φωνή σας." disabled></textarea>
+        </div>
+          <p id="error_message" style="text-align:center; color:white; background-color:black; opacity:0.2;"></p>
+          <button id ="download_btn" class="u-border-2 u-border-active-grey-80 u-btn u-btn-round u-button-style u-gradient u-hover-palette-1-light-1 u-none u-radius-50 u-text-active-black u-btn-4" onclick="button_bleep.play();saveFile()">ΛΗΨΗ ΑΡΧΕΙΟΥ ΚΕΙΜΕΝΟΥ</button>
+        <p style="text-align:center; color:white;">Προτείνετε η χρήση του Google Chrome.<br>Η ιστοσελίδα και οι εφαρμογές αυτής δεν δουλεύουν σε όλους τους Browsers.<p>
+    </section>
+    <!--The Footer of the Website-->
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6778">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <p class="u-small-text u-text u-text-variant u-text-1">© 2022 <a href="https://di.ionio.gr/">Ιόνιο Πανεπιστήμιο
+          </p></a>
+          <p class="u-small-text u-text u-text-variant u-text-2">Συγγραφέας: Κωνσταντίνα Δεληβέρη</p>
+      </div>
+    </footer>
+    <!--adding the additional javascript for website-->
+
+    <!--text-to-speech, speechrec and chatbot scripts that were created in javascript-->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <!--text-to-speech, speechrec and chatbot scripts that were created in javascript-->
+    <script type="text/javascript" src="JS/texttospeech/texttospeech.js"></script>
+
+    <!-- speech to text script-->
+    <script type="text/javascript" src="JS/speechrecognition/speechrecognition.js"></script>
+  </body>
+</html>

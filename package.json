@@ -1,0 +1,30 @@
+{
+  "name": "ttsnsprecproj",
+  "version": "1.0.0",
+  "description": "Συλλογή και μελέτη υλικού για την δημιουργία ενός web app όπου θα κάνει τις εξής ενέργειες: Text-To-Speech, SpeechRecognition, χρήση Chatbot.\r Δημιουργία μίας πρώτης όψης της ιστοσελίδας. Το template της ιστοσελίδας ήταν έτοιμο από την σελίδα [Nicepage](https://nicepage.com/) συγκεκριμένα το [θέμα](https://nicepage.com/t/108771/future-technology-trends-template). Έγιναν οι απαραίτητες αλλαγές στον HTML και CSS κώδικα μέσω ενός Text Editor ώστε να φέρω το site στην \r μορφή που ήθελα. Δημιουργία και λογαριασμού στο Google Cloud App Engine ώστε να αναιβάσω αργότερα το Web App μου.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konstantinadeliveri/ttsnsprecproj.git"
+  },
+  "keywords": [],
+  "author": "Konstantina Deliveri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konstantinadeliveri/ttsnsprecproj/issues"
+  },
+  "homepage": "https://github.com/konstantinadeliveri/ttsnsprecproj#readme",
+  "dependencies": {
+    "actions-on-google": "^3.0.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "file-saver": "^2.0.5",
+    "pdf-parse": "^1.1.1"
+  }
+}
