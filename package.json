@@ -1,7 +1,7 @@
 {
   "name": "ttsnsprecproj",
   "version": "1.0.0",
-  "description": "Συλλογή και μελέτη υλικού για την δημιουργία ενός web app όπου θα κάνει τις εξής ενέργειες: Text-To-Speech, SpeechRecognition, χρήση Chatbot.\r Δημιουργία μίας πρώτης όψης της ιστοσελίδας. Το template της ιστοσελίδας ήταν έτοιμο από την σελίδα [Nicepage](https://nicepage.com/) συγκεκριμένα το [θέμα](https://nicepage.com/t/108771/future-technology-trends-template). Έγιναν οι απαραίτητες αλλαγές στον HTML και CSS κώδικα μέσω ενός Text Editor ώστε να φέρω το site στην \r μορφή που ήθελα. Δημιουργία και λογαριασμού στο Google Cloud App Engine ώστε να αναιβάσω αργότερα το Web App μου.",
+  "description": "A text to speech and speech recognition application.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,5 +26,9 @@
     "express-fileupload": "^1.2.1",
     "file-saver": "^2.0.5",
     "pdf-parse": "^1.1.1"
+  },
+
+  "engines": {
+    "node": "16.x"
   }
 }
