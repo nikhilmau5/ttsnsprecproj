@@ -6,3 +6,15 @@ df-messenger {
 	--df-messenger-send-icon: #3890b5;
 	--df-messenger-user-message: #3890b5;
 }
+
+
+@media (max-width: 991px) {
+	button#widgetIcon{
+		margin-right: 207px;
+    }
+
+    .chat-wrapper{
+    	margin-right: 205px;
+    }
+
+}

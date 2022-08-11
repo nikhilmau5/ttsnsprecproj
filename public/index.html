@@ -34,7 +34,7 @@
       var button_bleep = new Audio();
       button_bleep.src = "Audio/Tiny Button Push.mp3";
     </script>
-    
+
     <!--clear the textarea script-->
     <script>
     function cleartextarea() {
@@ -128,7 +128,7 @@
         </span>
       </div>
       <!--dialogflow chatbot-->
-        <df-messenger
+        <!--<df-messenger
         intent="WELCOME"
         chat-title="Dorian The Bot"
         agent-id="948a47fb-b7f0-4082-8719-8fd259b00c9b"
@@ -136,7 +136,13 @@
         expand=true
         language-code="en"
         ></df-messenger>
-        <!--end of chatbot section-->
+          <style>
+          #shadow-root df-messenger @media screen and (min-width: 501px)
+            .expanded > #widgetIcon {
+              visibility: visible;
+                margin-right: 193px;
+        </style>
+        end of chatbot section-->
     </header>
 
     <!--start section-1-->

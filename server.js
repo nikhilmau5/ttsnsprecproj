@@ -48,10 +48,10 @@ app.post("/extract_text", (req, res) =>{
   * (gr): το dialogflow στέλνει το αίτημα webhook
   * Για το dialogflow χρειαζόμαστε ένα post request*/
 
-app.post("/webhook", (req, res) => {
+/*app.post("/webhook", (req, res) => {
 
   // get agent from request
-  let agent = new dlf.WebhookClient({request: req, respense: res});
+  let agent = new dlf.WebhookClient({request: req, response: res});
 
   function movieIntent(agent) {
     agent.add("10 Things I hate about you, I heard is a really romantic movie");
@@ -79,7 +79,7 @@ app.post("/webhook", (req, res) => {
   // agent handles request and passes intent map
   agent.handleRequest(intentMap);
 
-});
+});*/
 
 //server listens on port and displays message and the port
 app.listen(port);
