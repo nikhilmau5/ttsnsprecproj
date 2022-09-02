@@ -15,3 +15,5 @@
 
 ### Github Repository
 Περιέχει τα αρχεία σχολιασμένα. [Κώδικες](https://github.com/konstantinadeliveri/)
+
+## The url might take a second to open because the server needs sometime.
