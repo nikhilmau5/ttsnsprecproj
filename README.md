@@ -1,7 +1,6 @@
 <a href="https://github.com/konstantinadeliveri/ttsnsprecproj/blob/main/LICENCE">
-  <img src="https://github.com/badges/konstantinadeliveri/ttsnsprecproj">
+  <img src="https://gitlicense.com/badge/konstantinadeliveri/ttsnsprecproj" alt="GitLicence">
 </a> 
-<br>
 # Text-To-Speech and Speech Recognition Project
 
 ## Author: [Konstantina Deliveri](https://github.com/konstantinadeliveri)
