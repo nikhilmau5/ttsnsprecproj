@@ -4,7 +4,6 @@ const express = require("express");//(en): need to create the server (gr): χρ�
 const fileUpload = require ("express-fileupload");//(en): need for uploading files on server  (gr): χρειάζεται για τη μεταφόρτωση αρχείων στο διακομιστή
 const pdfParse = require("pdf-parse");//(en): need for extracting text from pdf  (gr): ανάγκη για εξαγωγή κειμένου από pdf
 const fileSaver = require("file-saver");//(en): need to save a txt file  (gr): για αποθήκευση αρχείου txt
-const dlf = require("dialogflow-fulfillment");//(en): for HTTP callbacks for chatbot requests and responses  (gr): για HTTP callbacks
 const path = require("path");// The path
 require("dotenv").config();// need for enironment variables
 
@@ -41,45 +40,6 @@ app.post("/extract_text", (req, res) =>{
 //app.use(express.json()); //recognize the incoming Request Object as a JSON Object(body parser for post request except html)
 //app.use(express.urlencoded({ extended: true }));//recognize the incoming Request Object as strings or arrays.(body parser for html)
 
-
-/**(en): on this route dialogflow sends the webhook request
-  * For the dialogflow we need post route.
-
-  * (gr): το dialogflow στέλνει το αίτημα webhook
-  * Για το dialogflow χρειαζόμαστε ένα post request*/
-
-/*app.post("/webhook", (req, res) => {
-
-  // get agent from request
-  let agent = new dlf.WebhookClient({request: req, response: res});
-
-  function movieIntent(agent) {
-    agent.add("10 Things I hate about you, I heard is a really romantic movie");
-    agent.add("In case you haven't watch it yet, Harry Potter is a classic one! If you've watched it then again you can always rewatch it!");
-    agent.add("If you like musicals I would recommend Lala land");
-    agent.add("I heard Spider-Man No way home is out.");
-    agent.add("The Joker is a really good one!");
-  }
-
-  function randomIntent(agent) {
-    agent.add("1");
-    agent.add("5");
-    agent.add("8");
-    agent.add("10");
-    agent.add("99");
-  }
-
-  // create intentMap for handling intents of agent
-  let intent_map = new Map();
-
-  // add intent map
-  intentMap.set("chatbot-1-movie-pick", movieIntent);
-  intentMap.set("chatbot-1-number", randomIntent);
-
-  // agent handles request and passes intent map
-  agent.handleRequest(intentMap);
-
-});*/
 
 //server listens on port and displays message and the port
 app.listen(port);
