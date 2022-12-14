@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://gitlicense.com/badge/konstantinadeliveri/ttsnsprecproj)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/konstantinadeliveri/ttsnsprecproj/blob/main/LICENCE)
 
 # Text-To-Speech and Speech Recognition Project
 
