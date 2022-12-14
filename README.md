@@ -1,6 +1,4 @@
-<a href="https://github.com/konstantinadeliveri/ttsnsprecproj/blob/main/LICENCE">
-  <img src="https://gitlicense.com/badge/konstantinadeliveri/ttsnsprecproj" alt="GitLicence">
-</a> 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://gitlicense.com/badge/konstantinadeliveri/ttsnsprecproj)
 
 # Text-To-Speech and Speech Recognition Project
 
