@@ -10,7 +10,7 @@ require("dotenv").config();// need for enironment variables
 /*(en):create the server and define the port that it runs on
 (gr): δημιουργία του διακομιστή και ορισμός της θύρας στην οποία τρέχει*/
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 /*(en):express needs to serve the static files, (path.join(__dirname)) is the root directory, 'public' is the directory that needs to be served
 (gr): το express πρέπει να εξυπηρετεί τα στατικά αρχεία, (path.join(__dirname)) είναι το root directory, 'public' είναι το directory που πρέπει να εξυπηρετηθεί*/
