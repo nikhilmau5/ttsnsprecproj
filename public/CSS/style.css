@@ -35222,6 +35222,8 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-text-hover-custom-color-4:focus .u-svg-link
         {
             fill: #723cca;
+            position: absolute;
+            bottom: -61px;
         }
 
         .u-link.u-text-custom-color-4:hover
