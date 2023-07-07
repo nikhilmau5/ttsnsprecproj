@@ -8,6 +8,12 @@
 
 #### Note: This web app was built for a university project and it supports only 2 languages(english & greek).
 
+![](Images/ttsnspeechrec1.png)<br>
+![](Images/ttsnspeechrec2.png)<br>
+![](Images/ttsnspeechrec3.png)<br>
+![](Images/ttsnspeechrec4.png)<br>
+<br>
+
 ## Github Repository
 Commented files. [Code](https://github.com/konstantinadeliveri/)
 
