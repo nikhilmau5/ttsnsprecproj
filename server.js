@@ -37,9 +37,6 @@ app.post("/extract_text", (req, res) =>{
   });
 });
 
-//app.use(express.json()); //recognize the incoming Request Object as a JSON Object(body parser for post request except html)
-//app.use(express.urlencoded({ extended: true }));//recognize the incoming Request Object as strings or arrays.(body parser for html)
-
 
 //server listens on port and displays message and the port
 app.listen(port);
