@@ -15,5 +15,5 @@
 <br>
 
 ## Github Repository
-Commented files. [Code](https://github.com/konstantinadeliveri/ttsnsprecproj/public/)
+Commented files. [Code](https://github.com/konstantinadeliveri/ttsnsprecproj/tree/main/public)
 
